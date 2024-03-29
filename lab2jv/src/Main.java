@@ -62,11 +62,16 @@ public class Main {
     }
 
     public static void displayObjects(Glucometer[] glucometers) {
-        for (Glucometer glucometer : glucometers) {
+        System.out.println("---------------------------------------------------");
+        System.out.printf("| %-10s | %-20s | %-10s |\n", "Индекс", "Модель", "Точность");
+        System.out.println("---------------------------------------------------");
+        for (int i = 0; i < glucometers.length; i++) {
+            Glucometer glucometer = glucometers[i];
             if (glucometer != null) {
-                System.out.println("Модель: " + glucometer.getModel() + ", Точность: " + glucometer.getAccuracy());
+                System.out.printf("| %-10d | %-20s | %-10.2f |\n", i, glucometer.getModel(), glucometer.getAccuracy());
             }
         }
+        System.out.println("---------------------------------------------------");
     }
 
     public static void modifyObjectProperties(Glucometer[] glucometers) {
