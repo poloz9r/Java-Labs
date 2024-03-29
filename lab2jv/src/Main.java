@@ -5,6 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int choice;
         Glucometer[] glucometers = new Glucometer[5]; // Создание массива объектов
+        String resultMessage = "";
 
         do {
             System.out.println("\nМеню:");
@@ -44,6 +45,8 @@ public class Main {
                     System.out.println("Неверный выбор. Попробуйте снова.");
                     break;
             }
+
+            System.out.println("\n" + resultMessage);
 
         } while (choice != 7);
     }
