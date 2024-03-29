@@ -37,8 +37,7 @@ public class Glucometer {
 
     // Метод вычисления самой лучшей точности (пример)
     public double calculateBestAccuracy() {
-        // Здесь может быть логика вычисления
-        // В данном примере просто возвращаем текущее значение точности
+
         return accuracy;
     }
 }
