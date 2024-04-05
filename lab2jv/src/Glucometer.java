@@ -35,9 +35,13 @@ public class Glucometer {
         this.accuracy = accuracy;
     }
 
-    // Метод вычисления самой лучшей точности (пример)
-    public double calculateBestAccuracy() {
+    // Увеличение точности на указанное значение
+    public void increaseAccuracy(double value) {
+        accuracy += value;
+    }
 
-        return accuracy;
+    // Уменьшение точности на указанное значение
+    public void decreaseAccuracy(double value) {
+        accuracy -= value;
     }
 }
